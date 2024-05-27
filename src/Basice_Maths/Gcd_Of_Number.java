@@ -28,7 +28,7 @@ public class Gcd_Of_Number {
 
         // Find the GCD of n1 and n2
         int gcd = findGcd(n1, n2);
-
+        System.out.println();
         System.out.println("GCD of " + n1 + " and " + n2 + " is: " + gcd);
     }
 
