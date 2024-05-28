@@ -1,8 +1,5 @@
 package Basice_Maths;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class Divisors_Number {
 
     public static void printDivisors(int n) {
@@ -29,7 +26,6 @@ public class Divisors_Number {
     }
 
     static long sumOfDivisors(int N) {
-        // code here
         long sum_divisors = 0;
         for (int k = 1; k <= N; k++) {
             sum_divisors += (long) k * (N / k);
