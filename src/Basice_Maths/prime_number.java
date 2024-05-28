@@ -40,7 +40,7 @@ public class prime_number {
 
 
     public static void main(String[] args) {
-        int n = 1483;
+        int n = 29379821;
         boolean isPrime = checkPrime(n);
         if (isPrime) {
             System.out.println(n + " is a prime number.");
