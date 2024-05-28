@@ -1,6 +1,6 @@
 package Recursion;
 
-public class printingsomethingNtimes {
+public class printing_something_n_times {
     static int cnt = 0;
     static void print(){
 
