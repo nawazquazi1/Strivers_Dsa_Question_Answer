@@ -18,7 +18,7 @@ public class Recursive_Bubble_Sort {
 
     }
     public static void main(String[] args) {
-        int[] arr = {13, 46, 24, 52, 20, 9};
+        int[] arr = {13, 46, 24,654,52, 20, 9};
         int n = arr.length;
         System.out.println("Before Using Bubble Sort: ");
         for (int j : arr) {
