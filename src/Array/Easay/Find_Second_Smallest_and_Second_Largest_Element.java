@@ -6,19 +6,19 @@ public class Find_Second_Smallest_and_Second_Largest_Element {
 
     // first approach
 
-//    public static void getSecondLargestElements(int[] arr, int n) {
-//        if (n == 0 || n == 1) {
-//            System.out.print(-1);
-//            System.out.print(" ");
-//            System.out.print(-1);
-//            System.out.print("\n");
-//        }
-//        Arrays.sort(arr);
-//        int small = arr[1];
-//        int large = arr[n - 2];
-//        System.out.println("Second smallest is " + small);
-//        System.out.println("Second largest is " + large);
-//    }
+    public static void getSecondLargestElements(int[] arr, int n) {
+        if (n == 0 || n == 1) {
+            System.out.print(-1);
+            System.out.print(" ");
+            System.out.print(-1);
+            System.out.print("\n");
+        }
+        Arrays.sort(arr);
+        int small = arr[1];
+        int large = arr[n - 2];
+        System.out.println("Second smallest is " + small);
+        System.out.println("Second largest is " + large);
+    }
 
     //    second approach
     public static void getElements(int[] arr, int n) {
