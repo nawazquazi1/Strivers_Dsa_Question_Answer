@@ -28,6 +28,25 @@ public class Find_the_missing_number_in_an_array {
         return -1;
     }
 
+    public static int missingnumber(int[] a, int N) {
+
+        int[] hash = new int[N + 1]; //hash array
+
+        // storing the frequencies:
+        for (int i = 0; i < N - 1; i++)
+            hash[a[i]]++;
+
+        //checking the freqencies for numbers 1 to N:
+        for (int i = 1; i <= N; i++) {
+            if (hash[i] == 0) {
+                return i;
+            }
+        }
+
+        // The following line will never execute.
+        // It is just to avoid warnings.
+        return -1;
+    }
 
     public static int missingNumber(int[] nums) {
         HashSet<Integer> hash = new HashSet<Integer>();
@@ -42,7 +61,7 @@ public class Find_the_missing_number_in_an_array {
         return nums.length;
     }
 
-    static int missing_Number(int []a, int N) {
+    static int missing_Number(int[] a, int N) {
 
         //Summation of first N numbers:
         int sum = (N * (N + 1)) / 2;
@@ -56,7 +75,7 @@ public class Find_the_missing_number_in_an_array {
         return sum - s2;
     }
 
-    static int missing_number(int []a, int N) {
+    static int missing_number(int[] a, int N) {
 
         int xor1 = 0, xor2 = 0;
 
