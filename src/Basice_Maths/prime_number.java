@@ -7,7 +7,7 @@ public class prime_number {
         // count the number of factors.
         int cnt = 0;
         // Loop through numbers from 1 to n.
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i *i<= n ; i++) {
             // If n is divisible by i
             // without any remainder.
             if (n % i == 0) {
@@ -40,7 +40,7 @@ public class prime_number {
 
 
     public static void main(String[] args) {
-        int n = 29379821;
+        int n = 222222222;
         boolean isPrime = checkPrime(n);
         if (isPrime) {
             System.out.println(n + " is a prime number.");
