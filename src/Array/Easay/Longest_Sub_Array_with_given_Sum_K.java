@@ -17,9 +17,10 @@ public class Longest_Sub_Array_with_given_Sum_K {
      */
     public static void main(String[] args) {
         System.out.println(longestSubArray(new int[]{2, 3, 5}, 5));
-        System.out.println(longestSubArray(new int[]{2,3,5,1,9,1,4,3,5,4,3,4,4,2,1,1,1,1,1,1,1,1,1,1}, 10,24));
+        System.out.println(longestSubArray(new int[]{2, 3, 5, 1, 9, 1, 4, 3, 5, 4, 3, 4, 4, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}, 10, 24));
     }
 
+    //first approach
     public static int longestSubArray(int[] arr, int k) {
 
         int maxLen = 0;
@@ -36,7 +37,7 @@ public class Longest_Sub_Array_with_given_Sum_K {
         return maxLen;
     }
 
-    // better approach    //{2,3,5,1,9,1,4,3,5,4,3,4,4,2}  k=10
+    // second approach    //{2,3,5,1,9,1,4,3,5,4,3,4,4,2}  k=10
     public static int longestSubArray(int[] arr, int k, int n) {
         int len = 0;
         int sum = 0;
@@ -66,7 +67,7 @@ public class Longest_Sub_Array_with_given_Sum_K {
 
     // third approach
 
-    public static int getLongestSubArray(int []a, long k) {
+    public static int getLongestSubArray(int[] a, long k) {
         int n = a.length; // size of the array.
 
         int left = 0, right = 0; // 2 pointers
@@ -92,8 +93,6 @@ public class Longest_Sub_Array_with_given_Sum_K {
 
         return maxLen;
     }
-
-
 
 
 }

@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class Find_Second_Smallest_and_Second_Largest_Element {
 
     // first approach
-
     public static void getSecondLargestElements(int[] arr, int n) {
         if (n == 0 || n == 1) {
             System.out.print(-1);
@@ -21,6 +20,7 @@ public class Find_Second_Smallest_and_Second_Largest_Element {
     }
 
     //    second approach
+
     public static void getElements(int[] arr, int n) {
         if (n == 0 || n == 1) {
             System.out.print(-1);
@@ -53,6 +53,7 @@ public class Find_Second_Smallest_and_Second_Largest_Element {
 
 
     // third approach
+
     public static int secondSmallest(int[] arr, int n) {
         if (n < 2) {
             return -1;
@@ -94,5 +95,6 @@ public class Find_Second_Smallest_and_Second_Largest_Element {
         int n = arr.length;
         getSecondLargestElements(arr, n);
         getElements(arr, n);
+//        secondSmallest()
     }
 }

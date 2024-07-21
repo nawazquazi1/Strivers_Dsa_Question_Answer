@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Left_Rotate_the_Array_by_One {
 
-
+    // first approach
     public static int[] leftRotateByOne(int[] arr) {
         int[] newArr = new int[arr.length];
         for (int i = 1; i < arr.length; i++) {
@@ -14,6 +14,7 @@ public class Left_Rotate_the_Array_by_One {
         return newArr;
     }
 
+    // second approach
     public static int[] left_Rotate(int[] arr, int k) {
         int[] newArr = new int[arr.length];
         int j = 0;
@@ -29,6 +30,7 @@ public class Left_Rotate_the_Array_by_One {
         return arr;
     }
 
+    // third approach
     public static int[] rotate(int[] a, int k) {
         k = k % a.length;
         if (k < 0) {

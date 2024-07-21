@@ -5,6 +5,9 @@ import java.util.concurrent.LinkedTransferQueue;
 
 public class Reverse_A_Array {
 
+
+    // first approach
+
     public static int[] reverse_array(int[] arr) {
         int[] temp = new int[arr.length];
         for (int i = 0; i < arr.length; i++) {
@@ -14,6 +17,7 @@ public class Reverse_A_Array {
     }
 
 
+    //second approach
     public static int[] reverseArray(int[] arr, int n) {
         int[] ans = new int[n];
         for (int i = n - 1; i >= 0; i--) {
@@ -22,7 +26,7 @@ public class Reverse_A_Array {
         return ans;
     }
 
-
+    //third approach
     public static int[] reverse_Array(int[] arr, int n) {
         int p1 = 0, p2 = n - 1;
         while (p1 < p2) {

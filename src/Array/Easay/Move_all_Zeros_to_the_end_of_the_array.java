@@ -5,7 +5,6 @@ import java.util.ArrayList;
 public class Move_all_Zeros_to_the_end_of_the_array {
 
     // first approach
-
     public static int[] move_all_Zeros_to_the_end_of_the_array(int[] arr) {
         ArrayList<Integer> temp = new ArrayList<>();
         for (int j : arr) {
@@ -23,7 +22,6 @@ public class Move_all_Zeros_to_the_end_of_the_array {
     }
 
     // second approach
-
     public static int[] moveZeros(int n, int[] a) {
         int j = -1;
         //place the pointer j:
@@ -59,6 +57,6 @@ public class Move_all_Zeros_to_the_end_of_the_array {
         for (int i = 0; i < n; i++) {
             System.out.print(ans[i] + " ");
         }
-        System.out.println("");
+//        System.out.println("");
     }
 }

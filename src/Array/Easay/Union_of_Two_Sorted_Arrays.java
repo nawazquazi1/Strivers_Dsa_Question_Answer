@@ -6,6 +6,8 @@ import java.util.HashSet;
 
 public class Union_of_Two_Sorted_Arrays {
 
+
+    // first approach
     public static int[] union(int[] arr1, int[] arr2) {
         HashSet<Integer> set1 = new HashSet<Integer>();
         for (int k : arr1) {
@@ -22,10 +24,11 @@ public class Union_of_Two_Sorted_Arrays {
         return arr;
     }
 
+    //second approach
     static ArrayList<Integer> FindUnion(int[] arr1, int[] arr2) {
         HashMap<Integer, Integer> freq = new HashMap<>();
         for (int j : arr1) {
-            freq.put(j, freq.getOrDefault(j, 0) );
+            freq.put(j, freq.getOrDefault(j, 0));
         }
 
         for (int j : arr2) {
@@ -34,6 +37,8 @@ public class Union_of_Two_Sorted_Arrays {
         return new ArrayList<>(freq.keySet());
     }
 
+
+    //third approach
     static ArrayList<Integer> FindUnion(int[] arr1, int[] arr2, int n, int m) {
         int i = 0, j = 0; // pointers
         ArrayList<Integer> Union = new ArrayList<>();

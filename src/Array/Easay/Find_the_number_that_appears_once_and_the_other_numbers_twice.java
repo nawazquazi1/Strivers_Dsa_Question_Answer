@@ -90,6 +90,6 @@ public class Find_the_number_that_appears_once_and_the_other_numbers_twice {
         int[] arr = {4, 1, 2, 1, 2};
         int ans = getSingleElement(arr,arr.length);
         System.out.println("The single element is: " + ans);
-
+//        getSingleElement()
     }
 }

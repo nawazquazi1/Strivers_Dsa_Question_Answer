@@ -20,6 +20,7 @@ public class Largest_element_in_an_array {
         return arr[arr.length - 1];
     }
 
+    // second approach
     public int findLargestElement(int[] arr) {
         int max = arr[0];
         for (int j : arr) {

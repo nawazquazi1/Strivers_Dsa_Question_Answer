@@ -3,6 +3,8 @@ package Array.Easay;
 import java.util.HashSet;
 
 public class Find_the_missing_number_in_an_array {
+
+    // first approach
     public static int missingNumber(int[] a, int N) {
         // Outer loop that runs from 1 to N:
         for (int i = 1; i <= N; i++) {
@@ -28,6 +30,8 @@ public class Find_the_missing_number_in_an_array {
         return -1;
     }
 
+    //second approach
+
     public static int missingnumber(int[] a, int N) {
 
         int[] hash = new int[N + 1]; //hash array
@@ -48,6 +52,8 @@ public class Find_the_missing_number_in_an_array {
         return -1;
     }
 
+    //third approach
+
     public static int missingNumber(int[] nums) {
         HashSet<Integer> hash = new HashSet<Integer>();
         for (int n : nums)
@@ -60,6 +66,9 @@ public class Find_the_missing_number_in_an_array {
         }
         return nums.length;
     }
+
+    // fourth approach
+
 
     static int missing_Number(int[] a, int N) {
 
@@ -74,6 +83,9 @@ public class Find_the_missing_number_in_an_array {
 
         return sum - s2;
     }
+
+
+    // fifth approach
 
     static int missing_number(int[] a, int N) {
 
