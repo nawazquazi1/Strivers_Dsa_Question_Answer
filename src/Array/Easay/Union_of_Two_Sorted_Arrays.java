@@ -25,16 +25,16 @@ public class Union_of_Two_Sorted_Arrays {
     static ArrayList<Integer> FindUnion(int[] arr1, int[] arr2) {
         HashMap<Integer, Integer> freq = new HashMap<>();
         for (int j : arr1) {
-            freq.put(j, freq.getOrDefault(j, 0) + 1);
+            freq.put(j, freq.getOrDefault(j, 0) );
         }
 
         for (int j : arr2) {
-            freq.put(j, freq.getOrDefault(j, 0) + 1);
+            freq.put(j, freq.getOrDefault(j, 0));
         }
         return new ArrayList<>(freq.keySet());
     }
 
-    static ArrayList<Integer> FindUnion(int arr1[], int arr2[], int n, int m) {
+    static ArrayList<Integer> FindUnion(int[] arr1, int[] arr2, int n, int m) {
         int i = 0, j = 0; // pointers
         ArrayList<Integer> Union = new ArrayList<>();
         while (i < n && j < m) {

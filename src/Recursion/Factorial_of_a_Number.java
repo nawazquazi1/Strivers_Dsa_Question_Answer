@@ -13,3 +13,4 @@ public class Factorial_of_a_Number {
         System.out.println(factorial(5));
     }
 }
+
