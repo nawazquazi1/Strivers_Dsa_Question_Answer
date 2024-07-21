@@ -5,6 +5,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Find_the_number_that_appears_once_and_the_other_numbers_twice {
+
+
+
+    // first approach
+
     public static int getSingleElement(int[] arr) {
         //Run a loop for selecting elements:
         // selected element
@@ -27,6 +32,8 @@ public class Find_the_number_that_appears_once_and_the_other_numbers_twice {
         return -1;
     }
 
+    // second approach
+
     public static int findTheNumber(int[] arr) {
         HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
         for (int num : arr) {
@@ -43,6 +50,9 @@ public class Find_the_number_that_appears_once_and_the_other_numbers_twice {
 
         return count;
     }
+
+
+    // third  approach
 
     public static int get_Single_Element(int []arr) {
         //size of the array:
@@ -65,6 +75,8 @@ public class Find_the_number_that_appears_once_and_the_other_numbers_twice {
         return -1;
     }
 
+    // fourth approach
+    
     public static int getSingleElement(int []arr,int n) {
 
         // XOR all the elements:

@@ -65,7 +65,7 @@ public class Longest_Sub_Array_with_given_Sum_K {
 
 
     // third approach
-    
+
     public static int getLongestSubArray(int []a, long k) {
         int n = a.length; // size of the array.
 
