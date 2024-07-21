@@ -76,7 +76,7 @@ public class Find_the_number_that_appears_once_and_the_other_numbers_twice {
     }
 
     // fourth approach
-    
+
     public static int getSingleElement(int []arr,int n) {
 
         // XOR all the elements:
