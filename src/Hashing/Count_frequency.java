@@ -7,12 +7,15 @@ public class Count_frequency {
 
     public static void Frequency(int[] arr) {
         Map<Integer, Integer> map = new HashMap<>();
-        for (int j : arr) {
-            if (map.containsKey(j)) {
-                map.put(j, map.get(j)+1);
-            } else {
-                map.put(j, 1);
-            }
+//        for (int j : arr) {
+//            if (map.containsKey(j)) {
+//                map.put(j, map.get(j)+1);
+//            } else {
+//                map.put(j, 1);
+//            }
+//        }
+        for (int j:arr){
+            map.put(j, map.getOrDefault(j, 0) + 1);
         }
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
             System.out.println(entry.getKey() + " " + entry.getValue());
