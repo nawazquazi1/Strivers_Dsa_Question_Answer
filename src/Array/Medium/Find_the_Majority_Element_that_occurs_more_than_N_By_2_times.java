@@ -3,7 +3,7 @@ package Array.Medium;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Findt_he_Majority_Element_that_occurs_more_than_N_By_2_times {
+public class Find_the_Majority_Element_that_occurs_more_than_N_By_2_times {
 
     /*
     Example 1:

@@ -16,7 +16,7 @@ public class Longest_Sub_Array_with_given_Sum_K {
 
      */
     public static void main(String[] args) {
-        System.out.println(longestSubArray(new int[]{2, 3, 5}, 5));
+        System.out.println(longestSubArray(new int[]{2, 3, 5,1,5,1,1,1,1,1}, 5));
         System.out.println(longestSubArray(new int[]{2, 3, 5, 1, 9, 1, 4, 3, 5, 4, 3, 4, 4, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}, 10, 24));
     }
 
