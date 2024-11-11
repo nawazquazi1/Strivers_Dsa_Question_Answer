@@ -2,10 +2,13 @@ package Array.Easay;
 
 public class If_an_Array_is_Sorted {
 
+
+    //  {2, 3, 5, 6, 10, 9}
+
     // first approach
     public static boolean isSorted(int[] arr, int n) {
         for (int i = 0; i < arr.length; i++) {
-            for (int j = i + 1; j < n + 1; j++) {
+            for (int j = i + 1; j < n; j++) {
                 if (arr[j] < arr[i])
                     return false;
             }
@@ -42,7 +45,7 @@ public class If_an_Array_is_Sorted {
 
     public static void main(String[] args) {
         int[] arr = {2, 3, 5, 6, 10, 9};
-        int n = 5;
+        int n = 6;
 
         System.out.println(isSorted(arr, n));
         System.out.println(check(arr));

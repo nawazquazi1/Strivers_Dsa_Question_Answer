@@ -29,6 +29,8 @@ public class Find_Second_Smallest_and_Second_Largest_Element {
             System.out.print("\n");
         }
 
+        //   int[] arr = {1, 2, 4, 6, 7, 5};
+
         int small = Integer.MAX_VALUE;
         int second_small = Integer.MAX_VALUE;
         int large = Integer.MIN_VALUE;

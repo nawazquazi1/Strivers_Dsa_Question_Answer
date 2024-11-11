@@ -14,51 +14,20 @@ public class Left_Rotate_the_Array_by_One {
         return newArr;
     }
 
-    // second approach
-    public static int[] left_Rotate(int[] arr, int k) {
-        int[] newArr = new int[arr.length];
-        int j = 0;
-        k = k % arr.length;
-        for (int i = arr.length - k; i < arr.length; i++) {
-            newArr[j++] = arr[i];
+    static void solve(int arr[], int n) {
+        int temp = arr[0]; // storing the first element of array in a variable
+        for (int i = 0; i < n - 1; i++) {
+          arr[i] = arr[i + 1];
         }
-        for (int i = 0; i < arr.length - k; i++) {
-            newArr[j++] = arr[i];
-//            System.out.println(Arrays.toString(newArr));
-        }
-        System.arraycopy(newArr, 0, arr, 0, arr.length);
-        return arr;
-    }
-
-    // third approach
-    public static int[] rotate(int[] a, int k) {
-        k = k % a.length;
-        if (k < 0) {
-            k += a.length;
-        }
-
-        reverse(a, 0, a.length - k - 1);
-        reverse(a, a.length - k, a.length - 1);
-        reverse(a, 0, a.length - 1);
-
-        return a;
-    }
-
-    private static void reverse(int[] a, int li, int ri) {
-        while (li < ri) {
-            int temp = a[li];
-            a[li] = a[ri];
-            a[ri] = temp;
-
-            li++;
-            ri--;
+        arr[n - 1] = temp; // assigned the value of variable at the last index
+        for (int i = 0; i < n; i++) {
+          System.out.print(arr[i]+" ");
         }
     }
-    //
 
-
+  
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(left_Rotate(new int[]{1, 2, 3, 4, 5, 6, 7}, 3)));
-        System.out.println(Arrays.toString(left_Rotate(new int[]{-1, -100, 3, 99}, 2)));
+        System.out.println(Arrays.toString(leftRotateByOne(new int[]{1, 2, 3, 4, 5, 6, 7})));
+       solve(new int[]{-1, -100, 3, 99}, 2);
     }
 }

@@ -25,15 +25,15 @@ public class Find_the_Majority_Element_that_occurs_more_than_N_By_2_times {
     : After counting the number of times each element appears and comparing it with half of array size, we get 2 as result.
 
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         System.out.println(findMajorityElement(new int[]{2, 2, 1, 1, 1, 2, 2}));
     }
 
     // first approach
-    public static int findMajorityElement(int[] nums) {
-        for (int num : nums) {
+    public static int findMajorityElement(final int[] nums) {
+        for (final int num : nums) {
             int count = 0;
-            for (int i : nums) {
+            for (final int i : nums) {
                 if (num == i) {
                     count++;
                 }
@@ -46,17 +46,17 @@ public class Find_the_Majority_Element_that_occurs_more_than_N_By_2_times {
     }
 
     // second approach
-    public static int findMajorityElement2(int[] nums) {
-        HashMap<Integer, Integer> mpp = new HashMap<>();
-        int n = nums.length;
+    public static int findMajorityElement2(final int[] nums) {
+        final HashMap<Integer, Integer> mpp = new HashMap<>();
+        final int n = nums.length;
 
-        for (int num : nums) {
-            int value = mpp.getOrDefault(num, 0);
+        for (final int num : nums) {
+            final int value = mpp.getOrDefault(num, 0);
             mpp.put(num, value + 1);
         }
 
         //searching for the majority element:
-        for (Map.Entry<Integer, Integer> it : mpp.entrySet()) {
+        for (final Map.Entry<Integer, Integer> it : mpp.entrySet()) {
             if (it.getValue() > (n / 2)) {
                 return it.getKey();
             }
@@ -65,11 +65,11 @@ public class Find_the_Majority_Element_that_occurs_more_than_N_By_2_times {
     }
 
     // third approach  /2, 2, 1, 1, 1, 2, 2
-    public int findMajorityElement3(int[] nums) {
+    public int findMajorityElement3(final int[] nums) {
 
         int count = 0;
         int element = 0;
-        for (int num : nums) {
+        for (final int num : nums) {
             if (count == 0) {
                 element = num;
                 count = 1;
@@ -79,7 +79,7 @@ public class Find_the_Majority_Element_that_occurs_more_than_N_By_2_times {
                 count--;
             }
         }
-        for (int num : nums) {
+        for (final int num : nums) {
             if (num == element) {
                 count++;
             }
