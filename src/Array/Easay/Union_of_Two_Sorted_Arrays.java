@@ -1,5 +1,6 @@
 package Array.Easay;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -66,14 +67,39 @@ public class Union_of_Two_Sorted_Arrays {
         return Union;
     }
 
+    public static ArrayList<Integer> findArrayIntersection(int[] a1, int[] a2) {
+        ArrayList<Integer> ans = new ArrayList<>();
+        int i = 0;
+        int j = 0;
+
+        while (i < a1.length && j < a2.length) {
+            if (a1[i] < a2[j]) {
+                i++;
+            } else if (a2[j] < a1[i]) {
+                j++;
+            } else {
+                ans.add(a1[i]);
+                i++;
+                j++;
+            }
+        }
+
+
+        return ans;
+
+    }
+
+
     public static void main(String[] args) {
         int n = 10, m = 7;
         int[] arr1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int[] arr2 = {2, 3, 4, 4, 5, 11, 12};
 //        int[] arr = union(arr1, arr2);
-        ArrayList<Integer> arr = FindUnion(arr1, arr2);
-        System.out.println("Union of arr1 and arr2 is ");
-        for (int val : arr)
-            System.out.print(val + " ");
+//        ArrayList<Integer> arr = FindUnion(arr1, arr2);
+//        System.out.println("Union of arr1 and arr2 is ");
+//        for (int val : arr)
+//            System.out.print(val + " ");
+
+        System.out.println(findArrayIntersection(arr1,arr2));
     }
 }
