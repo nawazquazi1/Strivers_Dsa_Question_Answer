@@ -11,7 +11,7 @@ public class factorial_Number {
     }
     public static void main(String[] args) {
 
-        int X = 10;
+        int X = 20;
         int result = factorial(X);
         System.out.println("The factorial of " + X + " is " + result);
     }

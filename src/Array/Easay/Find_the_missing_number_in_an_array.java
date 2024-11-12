@@ -38,7 +38,7 @@ public class Find_the_missing_number_in_an_array {
 
         // storing the frequencies:
         for (int i = 0; i < N - 1; i++)
-            hash[a[i]]++;
+            hash[a[i]]=1;
 
         //checking the freqencies for numbers 1 to N:
         for (int i = 1; i <= N; i++) {
@@ -101,10 +101,9 @@ public class Find_the_missing_number_in_an_array {
     }
 
     public static void main(String[] args) {
-        int N = 0;
-        int[] a = {1};
-
-        int ans = missingNumber(a);
+        int n = 9;
+        int[] a = {1,2,3,4,5,6,8,9};
+        int ans = missing_number(a,n);
         System.out.println("The missing number is: " + ans);
     }
 

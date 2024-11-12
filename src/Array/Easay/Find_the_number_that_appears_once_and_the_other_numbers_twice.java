@@ -13,7 +13,7 @@ public class Find_the_number_that_appears_once_and_the_other_numbers_twice {
     public static int getSingleElement(int[] arr) {
         //Run a loop for selecting elements:
         // selected element
-
+//  int[] arr = {4, 1, 2, 1, 2};
         ArrayList<Integer> list = new ArrayList<Integer>();
 
 

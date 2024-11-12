@@ -8,9 +8,10 @@ public class Count_Digits {
             int d = temp % 10;
             temp /= 10;
 
+            count++;
             // check if d divide N completely
-            if (d > 0 && N % d == 0)
-                count++;
+        //     if (d > 0 && N % d == 0)
+        //         count++;
         }
         return count;
     }

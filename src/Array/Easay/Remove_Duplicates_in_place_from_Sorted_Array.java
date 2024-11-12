@@ -45,7 +45,7 @@ public class Remove_Duplicates_in_place_from_Sorted_Array {
                 j++;  // Move the unique element position forward
                 arr[j] = arr[i];  // Place the current element in the new position
             }
-        }        
+        }
         return j + 1;  // The length of the array with unique elements
     }
 
