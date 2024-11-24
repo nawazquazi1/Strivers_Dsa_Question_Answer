@@ -32,7 +32,6 @@ public class Kadane_Algorithm_Maximum_Subarray_Sum_in_an_Array {
             int sum = 0;
             for (int j = i; j < arr.length; j++) {
                 sum += arr[j];
-
                 max = Math.max(max, sum);
             }
 
@@ -65,13 +64,10 @@ public class Kadane_Algorithm_Maximum_Subarray_Sum_in_an_Array {
         long sum = 0;
 
         for (int i = 0; i < n; i++) {
-
             sum += arr[i];
-
             if (sum > maxi) {
                 maxi = sum;
             }
-
             // If sum < 0: discard the sum calculated
             if (sum < 0) {
                 sum = 0;

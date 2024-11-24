@@ -29,7 +29,7 @@ public class Stock_Buy_And_Sell {
      */
     public static void main(String[] args) {
         System.out.println(stockBuyAndSell(new int[]{7, 6, 4, 3, 1}));
-        System.out.println(stockBuyAndSell(new int[]{7, 1, 5, 3, 6, 4}));
+        System.out.println(maxProfit(new int[]{7, 1, 5, 3, 6, 4}));
     }
 
 
@@ -47,7 +47,7 @@ public class Stock_Buy_And_Sell {
 
 
     // second approach
-    public int maxProfit(int[] arr) {
+    public static int maxProfit(int[] arr) {      // int[]{7, 1, 5, 3, 6, 4}
         int min = arr[0];
         int maxProfit = 0;
         for (int i = 1; i < arr.length; i++) {

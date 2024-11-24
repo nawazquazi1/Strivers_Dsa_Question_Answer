@@ -37,7 +37,7 @@ public class Leaders_In_An_Array {
         return leaders;
     }
 
-    public static List<Integer> leaders(int[] arr) {
+    public static List<Integer> leaders(int[] arr) {     // int[]{10, 22, 12, 3, 0, 6})
         ArrayList<Integer> leaders = new ArrayList<>();
         for (int i = 0; i < arr.length; i++) {
             boolean isLeader = true;

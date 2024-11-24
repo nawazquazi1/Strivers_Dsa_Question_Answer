@@ -75,7 +75,7 @@ public class Rearrange_Array_Elements_by_Sign {
 
      */
 
-    public static ArrayList<Integer> RearrangebySign(ArrayList<Integer> A, int n) {
+    public static ArrayList<Integer> RearrangebySign(ArrayList<Integer> A, int n) {     //  arr[] = {1,2,-4,-5,3,4}, N = 6
         ArrayList<Integer> pos = new ArrayList<>();
         ArrayList<Integer> neg = new ArrayList<>();
         for (int i = 0; i < n; i++) {

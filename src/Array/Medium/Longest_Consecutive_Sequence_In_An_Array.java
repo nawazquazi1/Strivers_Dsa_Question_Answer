@@ -62,7 +62,7 @@ public class Longest_Consecutive_Sequence_In_An_Array {
     }
 
 
-    public static int longestConsecutive(int[] a) {
+    public static int longestConsecutive(int[] a) {     //int[]{104, 100, 200, 1, 101, 102, 3, 2, 4, 103}
         int longest = 1;
         for (int j : a) {
             int x = j;
