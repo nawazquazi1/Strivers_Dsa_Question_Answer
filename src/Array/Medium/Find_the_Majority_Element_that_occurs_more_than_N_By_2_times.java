@@ -26,14 +26,14 @@ public class Find_the_Majority_Element_that_occurs_more_than_N_By_2_times {
 
      */
     public static void main(final String[] args) {
-        System.out.println(findMajorityElement(new int[]{2, 2, 1, 1, 1, 2, 2}));
+        System.out.println(findMajorityElement(new int[]{1,2, 2,  1, 1, 2, 2}));
     }
 
     // first approach
-    public static int findMajorityElement(final int[] nums) {
-        for (final int num : nums) {
+    public static int findMajorityElement(int[] nums) {
+        for ( int num : nums) {
             int count = 0;
-            for (final int i : nums) {
+            for ( int i : nums) {
                 if (num == i) {
                     count++;
                 }
@@ -46,17 +46,17 @@ public class Find_the_Majority_Element_that_occurs_more_than_N_By_2_times {
     }
 
     // second approach
-    public static int findMajorityElement2(final int[] nums) {
-        final HashMap<Integer, Integer> mpp = new HashMap<>();
-        final int n = nums.length;
+    public static int findMajorityElement2( int[] nums) {
+         HashMap<Integer, Integer> mpp = new HashMap<>();
+         int n = nums.length;
 
-        for (final int num : nums) {
-            final int value = mpp.getOrDefault(num, 0);
-            mpp.put(num, value + 1);
+        for ( int num : nums) {
+             int value = mpp.getOrDefault(num, 0);
+             mpp.put(num, value + 1);
         }
 
         //searching for the majority element:
-        for (final Map.Entry<Integer, Integer> it : mpp.entrySet()) {
+        for ( Map.Entry<Integer, Integer> it : mpp.entrySet()) {
             if (it.getValue() > (n / 2)) {
                 return it.getKey();
             }
