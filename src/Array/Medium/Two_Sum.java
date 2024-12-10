@@ -2,6 +2,7 @@ package Array.Medium;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Map;
 
 public class Two_Sum {
 
@@ -65,7 +66,15 @@ Explanation: There exist no such two numbers whose sum is equal to the target.
         }
         return arr;
     }
-
-
-
+    public int[] twoSum1(int[] nums, int target) {   // 2,6,5,8,11  16
+        Map<Integer, Integer> numMap = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if (numMap.containsKey(complement)) {
+                return new int[] { numMap.get(complement), i };
+            }
+            numMap.put(nums[i], i);
+        }
+        throw new IllegalArgumentException("No two sum solution");
+    }
 }
