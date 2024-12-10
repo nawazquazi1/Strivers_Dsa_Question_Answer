@@ -14,7 +14,7 @@ public class Sort_an_array_of_0s_1s_2s {
      */
 
     public static void main(String[] args) {
-        sortColors2(new int[]{2, 0, 1});
+        sortColors2(new int[]{2,0,2,1,1,0,2});
     }
 
     public static void sortColors(int[] nums) {
@@ -44,7 +44,7 @@ public class Sort_an_array_of_0s_1s_2s {
     }
 
     // second approach
-    public static void sortColors2(int[] nums) {
+    public static void sortColors2(int[] nums) {      //  Input: nums = [1,2,0,2,1,1,0,2]
         int low = 0, mid = 0, high = nums.length - 1;
         while (mid <= high) {
             if (nums[mid] == 0) {
